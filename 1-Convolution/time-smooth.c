@@ -11,10 +11,13 @@
 #include <stdlib.h>
 #include <time.h>
 
-main()
+unsigned char *readImage(const char *pFileName){
+  //read the image and returns the pixels array of the image
+}
 
+main()
 {
-FILE		*fpt;
+FILE    *fpt;
 unsigned char	*image;
 unsigned char	*smoothed;
 char		header[320];
