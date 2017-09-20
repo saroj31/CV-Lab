@@ -220,28 +220,27 @@ void TestMSFImage(unsigned char *pMSFImage,char infileName[30],image &img,kernel
 	FILE *fpt = fopen(infileName,"rb");
 
 	while(1){
-		int rc = fscanf(fpt,"%c %d %d\n",&letter,&gtR,&gtC);
+		int rc = fscanf(fpt,"%c %d %d\n",&letter,&gtC,&gtR);
 		if(EOF == rc) break;
 
 		//if('e' != letter) continue;
 
 		//if e then check
-		bool eDetected = false;
+		bool isDetected = false;
 		for(int r=gtR-ker.getRows();r<gtR+ker.getRows();r++){
 			for(int c=gtC-ker.getCols();c<gtC+ker.getCols();c++){
 
 				if(pMSFImage[(r*imgC)+c] == 255){
-					eDetected=true;
+					isDetected=true;
 					r=gtR+ker.getRows(); //this will stop the loop
 					c=gtC+ker.getCols();
 				}
 			}
 		}
 
-		if(eDetected && ('e' == letter))	nbTP+=1;
-		if(eDetected && ('e' != letter))		nbFP+=1;
+		if(isDetected && ('e' == letter))	nbTP+=1;
+		if(isDetected && ('e' != letter))		nbFP+=1;
 
-		eDetected = false;
 	}
 
 	std::cout<<" "<<nbTP<<" "<<nbFP<<std::endl;
@@ -274,7 +273,7 @@ int main(int argc, char *argv[]){
   	thres = atoi(argv[1]);
   }
   unsigned char *pMSFImage = NULL;
-  //for(thres = 0;thres<255;thres++){
+  for(thres = 0;thres<255;thres++){
    std::cout<<"t= "<<thres<<" ";
    pMSFImage=getMSFImage(ker,img,thres);
 
@@ -282,7 +281,7 @@ int main(int argc, char *argv[]){
   //unsigned char **ppGTruth = readGroudTruth(fileName,img);
 
   TestMSFImage(pMSFImage,fileName,img,ker);
-	//}
+	}
   saveImage(pMSFImage,img.getCols(),img.getRows());
 
   return 0;
