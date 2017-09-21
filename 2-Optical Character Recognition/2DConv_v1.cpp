@@ -44,37 +44,6 @@ void cleanPixels(unsigned int **ppIn,int iC,int iR){
 	delete ppIn;
 }
 
-unsigned char **readGroudTruth(char inFileName[30],image &inImg){
-
-	unsigned char **ppGroudTruth = new unsigned char*[inImg.getRows()*inImg.getCols()]; //maximum possible size i.e. if all are e
-	FILE *fpt = fopen(inFileName,"rb");
-	int c,r,nbTotP=0;
-	char letter;
-
-	//for(int r=0;r<inImg.getRows();r++){
-	//	ppGroudTruth[r] = new unsigned char[inImg.getCols()];
-	//}
-
-
-	//std::cout<<std::endl;
-	while(1){
-		int rc = fscanf(fpt,"%c %d %d\n",&letter,&r,&c);
-		if( rc == EOF)	break;
-		if('e'==letter)
-			ppGroudTruth[nbTotP] =new unsigned char[3];
-			ppGroudTruth[nbTotP][0] = letter;
-			ppGroudTruth[nbTotP][1] = r;
-			ppGroudTruth[nbTotP][2] = c;
-			nbTotP+=1;
-		//std::cout<<ppGroudTruth[c][r];
-	}
-	std::cout<<" GT+= "<<nbTotP<<std::endl;
-
-	fclose(fpt);
-	return ppGroudTruth;
-
-}
-
 unsigned char *normalizePixels(int *iOldPix,int inC,int inR){
 
 	//find oldmin an old max
@@ -88,9 +57,7 @@ unsigned char *normalizePixels(int *iOldPix,int inC,int inR){
 			oldMin = iOldPix[i];
 	}
 
-	//std::cout<<"min :"<<oldMin<<"max :"<<oldMax<<std::endl;
 	//use the oldMin and oldMax to get the normalized value
-	
 	unsigned char *opPixels = new unsigned char[inR*inC];
 	for(int r=0;r<inR;r++){
 		for(int c=0;c<inC;c++){
@@ -112,13 +79,9 @@ int kernel2dConv(image &iImg,int iCol,int iRow,int **ker,kernel &k){
 	int kr = k.getRows(),kc=k.getCols();
 	unsigned char **ppInPixels = iImg.getppPixels();
 
-	for( r=-(kr/2); r<=(kr/2); r++)	{
-		for(c=-(kc/2); c<=(kc/2); c++){
+	for( r=-(kr/2); r<=(kr/2); r++)	
+		for(c=-(kc/2); c<=(kc/2); c++)
 			outPixel += ppInPixels[iRow+r][iCol+c]*ker[r+(kr/2)][c+(kc/2)];
-			
-		}
-		
-	}
 
 	//for debug : uncomment below
 	//std::cout<<outPixel<<"   "<<iCol<<"  "<<iRow<<std::endl;
@@ -135,8 +98,6 @@ unsigned char *convolveSimple(image &iImg,kernel &k,int **kMSF_t){
    int sum;
    int ir=iImg.getRows(),ic= iImg.getCols(),kr = k.getRows(),kc = k.getCols();
 
-   //allocate memory for the out Pixel pointer
-   //opPixels = new unsigned char[iImg.getRows() * iImg.getCols()];
    tmpPixels = new int[iImg.getRows() * iImg.getCols()];
 
 
@@ -149,6 +110,7 @@ unsigned char *convolveSimple(image &iImg,kernel &k,int **kMSF_t){
 
 	opPixels = normalizePixels(tmpPixels,ic,ir);
 
+	//delete tmpPixels;
   return opPixels;
 
 }
@@ -196,7 +158,7 @@ unsigned char *getMSFImage(kernel &ker,image &iImg,int iT){
 	//Debug: Without threshold MSFImage
 	//saveImage(pMSFImage,iImg.getCols(),iImg.getRows());
 		
-	//loop through the image
+	//loop through the image and make it binary
 	for(int i=0;i<(iImg.getCols()*iImg.getRows());i++){
 
 		//if the returned pixel is greater than the threshold
@@ -213,6 +175,7 @@ void TestMSFImage(unsigned char *pMSFImage,char infileName[30],image &img,kernel
 
 	int imgR=img.getRows(),imgC=img.getCols();
 	int nbTP=0,nbFP=0;
+	int nbTN=0,nbFN=0;
 	char letter;
 	int gtR,gtC;
 
@@ -220,12 +183,10 @@ void TestMSFImage(unsigned char *pMSFImage,char infileName[30],image &img,kernel
 	FILE *fpt = fopen(infileName,"rb");
 
 	while(1){
+		//Get GroudTruth value from file line by line
 		int rc = fscanf(fpt,"%c %d %d\n",&letter,&gtC,&gtR);
 		if(EOF == rc) break;
 
-		//if('e' != letter) continue;
-
-		//if e then check
 		bool isDetected = false;
 		for(int r=gtR-ker.getRows();r<gtR+ker.getRows();r++){
 			for(int c=gtC-ker.getCols();c<gtC+ker.getCols();c++){
@@ -238,12 +199,19 @@ void TestMSFImage(unsigned char *pMSFImage,char infileName[30],image &img,kernel
 			}
 		}
 
-		if(isDetected && ('e' == letter))	nbTP+=1;
-		if(isDetected && ('e' != letter))		nbFP+=1;
+		if(isDetected && ('e' == letter))	nbTP+=1;   //True Positive
+		if(isDetected && ('e' != letter))		nbFP+=1; //Falses Positive
+		if(!isDetected && ('e' != letter))  nbTN+=1;	//True Negative
+		if(!isDetected && ('e' == letter))  nbFN+=1;  //False Negative
 
 	}
 
-	std::cout<<" "<<nbTP<<" "<<nbFP<<std::endl;
+	fclose(fpt);
+	//Make observation of TP and FP
+	float TPR,FPR;
+	TPR = (float)nbTP/float(nbFP+nbFN);
+	FPR = (float)nbFP/float(nbFP+nbTN);
+	std::cout<<nbTP<<","<<nbFP<<","<<nbTN<<","<<nbFN<<","<<TPR<<","<<FPR<<std::endl;
 	return;
 }
 
@@ -262,25 +230,17 @@ int main(int argc, char *argv[]){
   strcpy(fileName,"img/parenthood.ppm");
   image img(fileName);
 
-  //std::cout<<" kernel rows = "<<ker.getRows()<<std::endl;
-  //std::cout<<" kernel cols = "<<ker.getCols()<<std::endl;
-
-  //std::cout<<" image rows = "<<img.getRows()<<std::endl;
-  //std::cout<<" image cols = "<<img.getCols()<<std::endl;
-
   thres = 200; //default value can be set to anything
-  if(argc==2){
+  if(argc==2){ //is command line argument given
   	thres = atoi(argv[1]);
   }
   unsigned char *pMSFImage = NULL;
   for(thres = 0;thres<255;thres++){
-   std::cout<<"t= "<<thres<<" ";
-   pMSFImage=getMSFImage(ker,img,thres);
+   	std::cout<<thres<<",";
+   	pMSFImage=getMSFImage(ker,img,thres);
 
-  strcpy(fileName,"parenthood_gt.txt");
-  //unsigned char **ppGTruth = readGroudTruth(fileName,img);
-
-  TestMSFImage(pMSFImage,fileName,img,ker);
+  	strcpy(fileName,"parenthood_gt.txt");
+  	TestMSFImage(pMSFImage,fileName,img,ker);
 	}
   saveImage(pMSFImage,img.getCols(),img.getRows());
 
