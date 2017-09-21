@@ -156,7 +156,7 @@ unsigned char *getMSFImage(kernel &ker,image &iImg,int iT){
 	unsigned char *pMSFImage = convolveSimple(iImg,ker,ppMeanKernel);
 
 	//Debug: Without threshold MSFImage
-	//saveImage(pMSFImage,iImg.getCols(),iImg.getRows());
+	saveImage(pMSFImage,iImg.getCols(),iImg.getRows());
 		
 	//loop through the image and make it binary
 	for(int i=0;i<(iImg.getCols()*iImg.getRows());i++){
@@ -209,7 +209,7 @@ void TestMSFImage(unsigned char *pMSFImage,char infileName[30],image &img,kernel
 	fclose(fpt);
 	//Make observation of TP and FP
 	float TPR,FPR;
-	TPR = (float)nbTP/float(nbFP+nbFN);
+	TPR = (float)nbTP/float(nbTP+nbFN);
 	FPR = (float)nbFP/float(nbFP+nbTN);
 	std::cout<<nbTP<<","<<nbFP<<","<<nbTN<<","<<nbFN<<","<<TPR<<","<<FPR<<std::endl;
 	return;
@@ -230,12 +230,12 @@ int main(int argc, char *argv[]){
   strcpy(fileName,"img/parenthood.ppm");
   image img(fileName);
 
-  thres = 200; //default value can be set to anything
+  thres = 210; //default value can be set to anything
   if(argc==2){ //is command line argument given
   	thres = atoi(argv[1]);
   }
   unsigned char *pMSFImage = NULL;
-  for(thres = 0;thres<255;thres++){
+  for(thres = 0;thres<=256;thres++){
    	std::cout<<thres<<",";
    	pMSFImage=getMSFImage(ker,img,thres);
 
