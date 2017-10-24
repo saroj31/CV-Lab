@@ -13,9 +13,11 @@ private:
 
 public:
 
+	image();
 	image(FILE *fpt);
 	image(char iFileName[30]);
 	~image();
+	void operator=(image &inImg);
 	int getRows();
 	int getCols();
 	int getBytes();

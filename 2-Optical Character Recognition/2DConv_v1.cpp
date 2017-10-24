@@ -188,8 +188,8 @@ void TestMSFImage(unsigned char *pMSFImage,char infileName[30],image &img,kernel
 		if(EOF == rc) break;
 
 		bool isDetected = false;
-		for(int r=gtR-ker.getRows();r<gtR+ker.getRows();r++){
-			for(int c=gtC-ker.getCols();c<gtC+ker.getCols();c++){
+		for(int r=gtR-(ker.getRows()/2);r<gtR+(ker.getRows()/2);r++){
+			for(int c=gtC-(ker.getCols()/2);c<gtC+(ker.getCols()/2);c++){
 
 				if(pMSFImage[(r*imgC)+c] == 255){
 					isDetected=true;
@@ -242,7 +242,7 @@ int main(int argc, char *argv[]){
   	strcpy(fileName,"parenthood_gt.txt");
   	TestMSFImage(pMSFImage,fileName,img,ker);
 	}
-  saveImage(pMSFImage,img.getCols(),img.getRows());
+  //saveImage(pMSFImage,img.getCols(),img.getRows());
 
   return 0;
 
