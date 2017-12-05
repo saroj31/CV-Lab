@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage{refcount}
+
+\usepackage{geometry}
+\usepackage{listings}
+\geometry{a4paper, margin=1in}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[toc,page]{appendix}
+\usepackage{caption}
+\usepackage{subcaption}
+\title{\textbf{Intro to Computer Vision \\Lab-5, Active Contours}\vfill{}}
+
+\author{\textbf{Submitted By:}\\Saroj Kumar Dash}
+
+\begin{document}
+	\begin{titlepage}
+		\maketitle
+	\pagenumbering{gobble}
+	\end{titlepage}
+	
+\newpage
+\section{Problem Statement}
+\paragraph{}  To implement the active contour algorithm.  The program should load a grayscale PPM image and a list of contour points.The contour points should be used to estimate contour points and draw a contour that is formed by these points in the hawk.ppm file and use the active contour algorithm to make the contours shrink to the hawk and form the contours on its edges.
+
+\subsection{Solution}
+
+Input Image that I load:-
+\begin{figure}[!htb]
+    \centering
+  		\includegraphics[scale=0.2]{NetworkScience_6.jpg} 
+  		\caption{Page 1}
+  		\label{Fig1}
+ \end{figure}
+
+\section{Question-2} \textit Give some challenges in understanding the data which is solved by the Data preprocessing techniques ?
+\subsection{Answer}
+To understand our data in any data mining problem. Data cleaning and Data preprocessing is a very essential step. The reason is the data we generally receive for our analysis is often noisy and the format in which we finally we want it to happen is not the forming which it is already there. Below are the reasons why data preprocessing is essential step and what could be done in preprocessing to improve the data:
+\\1. Noisy raw data: Most of the raw data has measurement errors and errors due to non-calibrated data collection devices.By using data preprocessing we can address this issue by truncating the data,by including or removing the machine introduced error, by conditioning the data which is machine specific.
+\\
+\\2. Outliers in data: In some cases due to wrong measurements sometimes we can get very high impractical data or very low values which does not make sense to real world data. these kind of data are outliers and can really effect our machine learning algorithms if taken into consideration. In our data preprocessing we can plot this data and check the outliers and remove them from our data as these data doe snot make sense to be analyzed. Domain knowledge on transportation is really in this to identify and remove data that seems to be impractical.
+\\
+\\3. Boundary data: the boundary data due to different kind of scales of the data values can be different and thus when we do the operations on the data the operations can be very deviating in results. We use many systems and many values from that systems. in some cases the values can be very small and in some cases it can be very large. in such cases the operations can give us results on which the difference of values may not be noticeable. To avoid such kind of situation by using data preprocessing we can normalize the data or take logarithms of very large data or else multiply them with a constant in case of very small data. Normalization technique is used to solve this problem.
+\\
+TO solve these above issues we need Data preprocessing techniques.
+
+\section{Question-3} \textit How can the functional categories of data analytics be classified broadly ?
+\subsection{Answer}
+There are four broad functional facets of Data Analytics:
+\\
+\\1. Descriptive Analysis : To understand the current state of the Data.
+\\2. Diagnostic Analysis : To understand why we observed the observation in the descriptive analysis.
+\\3. Predictive Analysis : To predict future events using the mathematical models.
+\\4. Prescriptive Analysis : To provide intelligent recommendations about how to ensure only a chose or preferred outcome.
+
+\begin{thebibliography}{99}
+\bibitem{c1} In Data Analytics for Intelligent Transportation Systems, edited by Mashrur Chowdhury, , Amy Apon, and Kakan Dey, Elsevier, 2017, Pages i, iii, ISBN 9780128097151, https://doi.org/10.1016/B978-0-12-809715-1.00013-4. 
+\end{thebibliography}
+\end{document}
