@@ -112,6 +112,27 @@ struct point3d get3dCoords(image &inImg_t,struct point ipt){
 	return oPt3d;
 }
 
+double dotProduct(struct point3d iVecA,struct point3d iVecB){
+
+	int a1,a2,a3=0;
+	int b1,b2,b3=0;
+	double oDotVal = 0.0;
+	
+
+	a1 = iVecA.c;
+	a2 = iVecA.r;
+	a3 = iVecA.d;
+
+	b1 = iVecB.c;
+	b2 = iVecB.r;
+	b3 = iVecB.d;
+
+	dotVal = a1*b1 + a2*b2 + a3*b3;
+
+	return oDotVal;
+
+
+}
 
 
 struct point3d crossProduct(struct point3d iVecA,struct point3d iVecB){
