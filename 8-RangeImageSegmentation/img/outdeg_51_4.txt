@@ -1,0 +1,12 @@
+Region labeled 1 is 713 in size
+1 -22.522771,-1.136282,-8.195585
+Region labeled 2 is 440 in size
+2 4.599245,-3.734720,-7.943015
+Region labeled 3 is 235 in size
+3 -1.244708,14.551283,-4.527213
+Region labeled 4 is 4932 in size
+4 -1.062503,13.862880,-4.779944
+Region labeled 5 is 607 in size
+5 65.651862,-2.739392,-22.457364
+5 total regions were found
+Region labeled 6 is 9224 in size

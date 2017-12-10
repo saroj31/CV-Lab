@@ -1,14 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.11.12)  12 NOV 2017 20:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.3)  7 DEC 2017 09:18
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**Lab5.tex
-(./Lab5.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 5 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+**./Lab5.tex
+(Lab5.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,21 +21,21 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -52,8 +50,9 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
 \lst@mode=\count90
 \lst@gtempboxa=\box26
 \lst@token=\toks16
@@ -67,35 +66,35 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \lst@lineno=\count95
 \lst@maxwidth=\dimen114
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count96
 \lst@skipnumbers=\count97
 \lst@framebox=\box27
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen115
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen116
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count98
@@ -136,44 +135,36 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count110
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen124
 \Gin@req@width=\dimen125
 )
-(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\latex\appendix\appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count111
-\c@@ppsavesec=\count112
-\c@@ppsaveapp=\count113
+\c@@pps=\count110
+\c@@ppsavesec=\count111
+\c@@ppsaveapp=\count112
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen126
@@ -184,14 +175,15 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen131
 \caption@hangindent=\dimen132
 )
-\c@ContinuedFloat=\count114
+\c@ContinuedFloat=\count113
 Package caption Info: listings package is loaded.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
-\c@subfigure=\count115
-\c@subtable=\count116
-) (./Lab5.aux)
+\c@subfigure=\count114
+\c@subtable=\count115
+)
+(Lab5.aux)
 \openout1 = `Lab5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -241,72 +233,73 @@ LaTeX Font Info:    ... okay on input line 16.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count117
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+\c@lstlisting=\count116
+(C:\Users\sdash\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
+\scratchcounter=\count117
 \scratchdimen=\dimen133
 \scratchbox=\box30
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\nofMPsegments=\count118
+\nofMParguments=\count119
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count121
+\MPscratchCnt=\count120
 \MPscratchDim=\dimen134
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks23
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+ [1
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Lab5.toc)
+{C:/Users/sdash/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Lab5.toc)
 \tf@toc=\write3
 \openout3 = `Lab5.toc'.
 
@@ -314,152 +307,169 @@ Package caption Info: End \AtBeginDocument code.
 Missing character: There is no â in font cmsl10!
 Missing character: There is no € in font cmsl10!
 Missing character: There is no ¢ in font cmsl10!
-
-<CalImage_0.png, id=12, 481.8pt x 361.35pt>
+<CalImage_0.png, id=11, 481.8pt x 361.35pt>
 File: CalImage_0.png Graphic file (type png)
- <use CalImage_0.png>
-Package pdftex.def Info: CalImage_0.png used on input line 41.
-(pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
- [1 <./CalImage_0.png (PNG copy)>] <CalImage_1.png, id=17, 481.8pt x 361.35pt>
+<use CalImage_0.png>
+Package pdftex.def Info: CalImage_0.png  used on input line 41. on input line 4
+1.
+Package pdftex.def Info: Requested size: 289.08221pt x 216.81168pt on input lin
+e 41.
+
+[1 <./CalImage_0.png (PNG copy)>]
+<CalImage_1.png, id=16, 481.8pt x 361.35pt>
 File: CalImage_1.png Graphic file (type png)
-
 <use CalImage_1.png>
-Package pdftex.def Info: CalImage_1.png used on input line 49.
-(pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
- <CalImage_2.png, id=18, 481.8pt x 361.35pt>
+Package pdftex.def Info: CalImage_1.png  used on input line 49. on input line 4
+9.
+Package pdftex.def Info: Requested size: 289.08221pt x 216.81168pt on input lin
+e 49.
+<CalImage_2.png, id=17, 481.8pt x 361.35pt>
 File: CalImage_2.png Graphic file (type png)
-
 <use CalImage_2.png>
-Package pdftex.def Info: CalImage_2.png used on input line 56.
-(pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
- <CalImage_3.png, id=19, 481.8pt x 361.35pt>
+Package pdftex.def Info: CalImage_2.png  used on input line 56. on input line 5
+6.
+Package pdftex.def Info: Requested size: 289.08221pt x 216.81168pt on input lin
+e 56.
+<CalImage_3.png, id=18, 481.8pt x 361.35pt>
 File: CalImage_3.png Graphic file (type png)
-
 <use CalImage_3.png>
-Package pdftex.def Info: CalImage_3.png used on input line 63.
-(pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
- [2 <./CalImage_1.png (PNG copy)> <./CalImage_2.png (PNG copy)>] <CalImage_4.pn
-g, id=23, 481.8pt x 361.35pt>
+Package pdftex.def Info: CalImage_3.png  used on input line 63. on input line 6
+3.
+Package pdftex.def Info: Requested size: 289.08221pt x 216.81168pt on input lin
+e 63.
+ [2 <./CalImage_1.png (PNG copy)> <./CalImage_2.png (PNG copy)>]
+<CalImage_4.png, id=22, 481.8pt x 361.35pt>
 File: CalImage_4.png Graphic file (type png)
- <use CalImage_4.png>
-Package pdftex.def Info: CalImage_4.png used on input line 71.
-(pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
+<use CalImage_4.png>
+Package pdftex.def Info: CalImage_4.png  used on input line 71. on input line 7
+1.
+Package pdftex.def Info: Requested size: 289.08221pt x 216.81168pt on input lin
+e 71.
  [3 <./CalImage_3.png (PNG copy)> <./CalImage_4.png (PNG copy)>]
-<CalImage_5.png, id=27, 481.8pt x 361.35pt>
+<CalImage_5.png, id=26, 481.8pt x 361.35pt>
 File: CalImage_5.png Graphic file (type png)
- <use CalImage_5.png>
-Package pdftex.def Info: CalImage_5.png used on input line 78.
-(pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
- [4 <./CalImage_5.png (PNG copy)>] <cam0.JPG, id=31, 602.25pt x 451.6875pt>
+<use CalImage_5.png>
+Package pdftex.def Info: CalImage_5.png  used on input line 78. on input line 7
+8.
+Package pdftex.def Info: Requested size: 289.08221pt x 216.81168pt on input lin
+e 78.
+ [4 <./CalImage_5.png (PNG copy)>]
+<cam0.JPG, id=30, 602.25pt x 451.6875pt>
 File: cam0.JPG Graphic file (type jpg)
- <use cam0.JPG>
-Package pdftex.def Info: cam0.JPG used on input line 108.
-(pdftex.def)             Requested size: 361.35278pt x 271.01459pt.
-
-[5 <./cam0.JPG>] <Background0.png, id=36, 481.8pt x 361.35pt>
+<use cam0.JPG>
+Package pdftex.def Info: cam0.JPG  used on input line 108. on input line 108.
+Package pdftex.def Info: Requested size: 361.35278pt x 271.01459pt on input lin
+e 108.
+ [5 <./cam0.JPG>]
+<Background0.png, id=35, 481.8pt x 361.35pt>
 File: Background0.png Graphic file (type png)
-
 <use Background0.png>
-Package pdftex.def Info: Background0.png used on input line 117.
-(pdftex.def)             Requested size: 289.08221pt x 216.81168pt.
- (./Floor_0.txt)
+Package pdftex.def Info: Background0.png  used on input line 117. on input line
+ 117.
+Package pdftex.def Info: Requested size: 289.08221pt x 216.81168pt on input lin
+e 117.
+ (Floor_0.txt)
 Overfull \hbox (94.03745pt too wide) in paragraph at lines 1--122
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][] 
  []
 
-<Background1.png, id=37, 481.8pt x 361.35pt>
+<Background1.png, id=36, 481.8pt x 361.35pt>
 File: Background1.png Graphic file (type png)
- <use Background1.png>
-Package pdftex.def Info: Background1.png used on input line 126.
-(pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
-
-(./Floor_1.txt)
+<use Background1.png>
+Package pdftex.def Info: Background1.png  used on input line 126. on input line
+ 126.
+Package pdftex.def Info: Requested size: 240.8994pt x 180.67456pt on input line
+ 126.
+(Floor_1.txt)
 Overfull \hbox (178.0383pt too wide) in paragraph at lines 1--131
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][] 
  []
 
 [6 <./Background0.png (PNG copy)> <./Background1.png (PNG copy)>]
-<Background2.png, id=43, 481.8pt x 361.35pt>
+<Background2.png, id=42, 481.8pt x 361.35pt>
 File: Background2.png Graphic file (type png)
- <use Background2.png>
-Package pdftex.def Info: Background2.png used on input line 136.
-(pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
-
-(./Floor_2.txt)
+<use Background2.png>
+Package pdftex.def Info: Background2.png  used on input line 136. on input line
+ 136.
+Package pdftex.def Info: Requested size: 240.8994pt x 180.67456pt on input line
+ 136.
+ (Floor_2.txt)
 Overfull \hbox (64.03714pt too wide) in paragraph at lines 1--140
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][] 
  []
 
-<Background3.png, id=44, 481.8pt x 361.35pt>
+<Background3.png, id=43, 481.8pt x 361.35pt>
 File: Background3.png Graphic file (type png)
- <use Background3.png>
-Package pdftex.def Info: Background3.png used on input line 144.
-(pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
-
-(./Floor_3.txt)
+<use Background3.png>
+Package pdftex.def Info: Background3.png  used on input line 144. on input line
+ 144.
+Package pdftex.def Info: Requested size: 240.8994pt x 180.67456pt on input line
+ 144.
+(Floor_3.txt)
 Overfull \hbox (16.03665pt too wide) in paragraph at lines 1--148
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
 [7 <./Background2.png (PNG copy)> <./Background3.png (PNG copy)>]
-<Background4.png, id=48, 481.8pt x 361.35pt>
+<Background4.png, id=47, 481.8pt x 361.35pt>
 File: Background4.png Graphic file (type png)
- <use Background4.png>
-Package pdftex.def Info: Background4.png used on input line 153.
-(pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
-
-(./Floor_4.txt)
+<use Background4.png>
+Package pdftex.def Info: Background4.png  used on input line 153. on input line
+ 153.
+Package pdftex.def Info: Requested size: 240.8994pt x 180.67456pt on input line
+ 153.
+ (Floor_4.txt)
 Overfull \hbox (148.038pt too wide) in paragraph at lines 1--157
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][] 
  []
 
-<Background5.png, id=49, 481.8pt x 361.35pt>
+<Background5.png, id=48, 481.8pt x 361.35pt>
 File: Background5.png Graphic file (type png)
- <use Background5.png>
-Package pdftex.def Info: Background5.png used on input line 161.
-(pdftex.def)             Requested size: 240.8994pt x 180.67456pt.
-
-(./Floor_5.txt)
+<use Background5.png>
+Package pdftex.def Info: Background5.png  used on input line 161. on input line
+ 161.
+Package pdftex.def Info: Requested size: 240.8994pt x 180.67456pt on input line
+ 161.
+(Floor_5.txt)
 Overfull \hbox (172.03824pt too wide) in paragraph at lines 1--165
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][] 
  []
 
-<ocm.JPG, id=50, 594.72188pt x 421.575pt>
+<ocm.JPG, id=49, 594.72188pt x 421.575pt>
 File: ocm.JPG Graphic file (type jpg)
- <use ocm.JPG>
-Package pdftex.def Info: ocm.JPG used on input line 170.
-(pdftex.def)             Requested size: 297.36021pt x 210.78697pt.
- [8 <./Background4.png (PNG copy)> <./Background5.png (PNG copy)>] [9 <./ocm.JP
-G>] (./Calib_0.txt)
-(./Calib_1.txt) (./Calib_2.txt [10]) (./Calib_3.txt) (./Calib_4.txt) [11]
-(./Calib_5.txt) (./CalPoints_0.txt) (./CalPoints_1.txt [12]) (./CalPoints_2.txt
-) (./CalPoints_3.txt [13]) (./CalPoints_4.txt) (./CalPoints_5.txt [14])
-[15] (./Lab5.aux) ) 
+<use ocm.JPG>
+Package pdftex.def Info: ocm.JPG  used on input line 170. on input line 170.
+Package pdftex.def Info: Requested size: 297.36021pt x 210.78697pt on input lin
+e 170.
+[8 <./Background4.png (PNG copy)> <./Background5.png (PNG copy)>] [9 <./ocm.JPG
+>] (Calib_0.txt) (Calib_1.txt) (Calib_2.txt [10]) (Calib_3.txt) (Calib_4.txt)
+[11] (Calib_5.txt) (CalPoints_0.txt) (CalPoints_1.txt [12]) (CalPoints_2.txt)
+(CalPoints_3.txt [13]) (CalPoints_4.txt) (CalPoints_5.txt [14]) [15] (Lab5.aux)
+ ) 
 Here is how much of TeX's memory you used:
- 5114 strings out of 494902
- 76131 string characters out of 6179890
- 182548 words of memory out of 5000000
- 8299 multiletter control sequences out of 15000+600000
- 9683 words of font info for 35 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 39i,7n,43p,993b,1407s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Lab5.pdf (17 pages, 2881897 bytes).
+ 5060 strings out of 493312
+ 76755 string characters out of 3138899
+ 183160 words of memory out of 3000000
+ 8491 multiletter control sequences out of 15000+200000
+ 9683 words of font info for 35 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,7n,43p,995b,1407s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on Lab5.pdf (17 pages, 2890294 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
