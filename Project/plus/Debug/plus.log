@@ -1,0 +1,4 @@
+﻿cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+  main.c
+main.c(571): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+  plus.vcxproj -> F:\ClemsonSemesters\Fall2017\CV-Lab\Project\plus\.\Debug\plus.exe
